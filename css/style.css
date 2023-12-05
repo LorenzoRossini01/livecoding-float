@@ -1,0 +1,70 @@
+:root {
+  --bg-color: rgb(1, 0, 26);
+  --main-title: rgb(255, 0, 102);
+  --subtitle-text: rgb(255, 98, 0);
+  --text-color: white;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+img {
+  width: 300px;
+}
+
+h1 {
+  color: var(--main-title);
+  margin: 2rem 0;
+}
+
+h2 {
+  color: var(--subtitle-text);
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+}
+
+p {
+  padding: 0.8rem 0;
+}
+
+/* UTILS */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.debug {
+  min-height: 80px;
+  background-color: lightgray;
+  padding: 2rem;
+}
+
+.float-left {
+  float: left;
+  margin: 1rem;
+  margin-left: 0;
+}
+
+.float-right {
+  float: right;
+  margin: 1rem;
+  margin-right: 0;
+}
